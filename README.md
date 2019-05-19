@@ -65,6 +65,15 @@ amd
 - 安装 RC scripts 到目标磁区
 - 安装 Clover 系统偏好设置面板
 
+```bash
+# TODO
+# Clone EFI 之后先还原以下空文件夹
+mkdir -p kexts/10.13/DummyUSBEHCIPCI.kext/Contents/_CodeSignature
+mkdir -p kexts/10.13/DummyUSBEHCIPCI.kext/Contents/MacOS
+mkdir -p kexts/10.13/DummyUSBXHCIPCI.kext/Contents/_CodeSignature
+mkdir -p kexts/10.13/DummyUSBXHCIPCI.kext/Contents/MacOS
+```
+
 ## 升级到 10.13.6
 
 // TODO: 更新内核什么的
