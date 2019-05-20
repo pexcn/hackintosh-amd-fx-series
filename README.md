@@ -1,4 +1,4 @@
-# Hackintosh AMD
+# Hackintosh AMD FX6300
 
 这是一个给 AMD CPU 用的 Hackintosh, macOS 版本号：High Sierra 10.13.x
 
@@ -65,6 +65,15 @@ amd
 - 安装 RC scripts 到目标磁区
 - 安装 Clover 系统偏好设置面板
 
+```bash
+# TODO
+# Clone EFI 之后先还原以下空文件夹
+mkdir -p kexts/10.13/DummyUSBEHCIPCI.kext/Contents/_CodeSignature
+mkdir -p kexts/10.13/DummyUSBEHCIPCI.kext/Contents/MacOS
+mkdir -p kexts/10.13/DummyUSBXHCIPCI.kext/Contents/_CodeSignature
+mkdir -p kexts/10.13/DummyUSBXHCIPCI.kext/Contents/MacOS
+```
+
 ## 升级到 10.13.6
 
 // TODO: 更新内核什么的
@@ -83,9 +92,8 @@ amd
   - https://bbs.feng.com/read-htm-tid-11104214.html
 - 下载
   - 镜像
-    - https://download.amd-osx.com/installers.html
-    - https://drive.google.com/file/d/1_-j7YU1f8jz3937iCBoj470sASNS9_rC/view (Unofficial)
     - https://drive.google.com/file/d/1PyM3Imk3diK3NXrtPoLwV78JLguTLEWj/view
+    - https://drive.google.com/file/d/1_-j7YU1f8jz3937iCBoj470sASNS9_rC/view (Unofficial)
   - Kernel
     - https://download.amd-osx.com/kernels.html
     - https://github.com/Shaneee92/AMD-High-Sierra-XNU
@@ -93,6 +101,8 @@ amd
   - 驱动
     - https://download.amd-osx.com/extras.html
     - https://www.tonymacx86.com/nvidia-drivers
+
+---
 
 ```bash
 # TODO
