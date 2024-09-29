@@ -1,0 +1,7 @@
+.fseventsd/
+.Spotlight-V100/
+.DS_Store
+._*
+opencore-*.txt
+System Volume Information/
+EFI/Microsoft/
